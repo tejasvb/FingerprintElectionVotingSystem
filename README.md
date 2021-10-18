@@ -35,7 +35,7 @@ in mysql database
 ) 
 ```
 * Create voter in voter table manually add voter_id, name,surname,middle_name,gender,birthdate,address ,fingerprint manually. And leave reamaining field null.
-<br/>
+
 * Create parties with name A,B,C,D,E,F,G,H
 ### 3. Run project 
 * Go to FingerprintElectionVotingSystem directory
