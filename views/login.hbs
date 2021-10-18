@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+     <nav>
+        <h4>ELECTION</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class = "container mt-4">
+       <div class="card" >
+          <div class="card-header">
+             Voter Log In
+          </div>
+          <div class="card-body">
+              <form action="/auth/login" method="POST">
+                    <div class="mb-3">
+                    <label for="voter_id"  class="form-label">Voter Id Number</label>
+                    <input type="number" name="voter_id" class="form-control" id="voter_id" required>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                   
+                
+                <button type="submit" class="btn btn-primary">Log In</button>
+               </form>
+           </div>
+           {{#if message}}
+             <h4 class="alert alert-danger mt-4">{{message}}</h4>
+           {{/if}}
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>

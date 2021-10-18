@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .btn1{
+    padding: 6px 20px;
+    border: 3px solid white;
+    border-radius: 11px;
+    background-color:purple;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 135px;
+}
+
+.btn1:hover{
+    color: black;
+    background-color: white;
+    border-color: red;
+}
+
+.btn2{
+   padding: 6px 20px;
+    border: 3px solid white;
+    border-radius: 11px;
+    background-color: blue;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    position: relative;
+    left: 45%;
+}
+
+.btn2:hover{
+    color: black;
+    background-color: white;
+    border-color: red;
+}
+
+.card{
+    box-shadow: 4px 3px 5px grey;
+}    
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <link href="/style.css" rel="stylesheet">
+     <link href="style.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home Page</title>
+  </head>
+  <body align="center">
+        <nav>
+        <h4><a href="/">ELECTION</a></h4>
+        <ul>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+</div>
+<form action="/auth/vote" method="POST">
+   <h1 style="text-align:center;">Voting Page</h1>
+   <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+   <div class="container overflow-hidden" style="padding: 85px 91px;">
+    <div class="row gy-5">
+      <div class="col-6">
+        <div class="card mb-3" id="card1" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/a.png" class="img-fluid rounded-start" alt="All_India_Trinamool_Congress_symbol.svg">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PARTY A (A)</h5>
+                  <p class="card-text">ABCD</p>
+                  <div>
+                    <input type="radio" class="btn-check" value="A" name="btnradio" id="btnradioForPartyA" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btnradioForPartyA">Vote</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-3" style="max-width: 540px;" >
+            <div class="row g-0" style="height: 162px;" >
+              <div class="col-md-4">
+                <img src="/b.png" class="img-fluid rounded-start" alt="BJP_election_symbol">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PARTY B(B)</h5>
+                  <p class="card-text">BCDE</p>
+                  <div>
+                      <input type="radio" class="btn-check" value="B" name="btnradio" id="btnradioForPartyB" autocomplete="off">
+                       <label class="btn btn-outline-success" for="btnradioForPartyB">Vote</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-3" id="card2" style="max-width: 540px;">
+            <div class="row g-0" style="height: 162px;">
+              <div class="col-md-4">
+                <img src="/c.png" class="img-fluid rounded-start" alt="Hand_INC.svg">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PARTY C (C)</h5>
+                  <p class="card-text">CDEF</p>
+                  <div>
+                     <input type="radio" class="btn-check"  value="C" name="btnradio" id="btnradioForPartyC" autocomplete="off">
+                     <label class="btn btn-outline-success" for="btnradioForPartyC">Vote</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-3" id="card3" style="max-width: 540px;">
+            <div class="row g-0" style="height: 162px;">
+              <div class="col-md-4">
+                <img src="/d.png" class="img-fluid rounded-start" alt="Nationalist_Congress_Party_Election_Symbol">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">	PARTY D (D)</h5>
+                  <p class="card-text">DEFG</p>
+                  <div>
+                     <input type="radio" class="btn-check" value="D" name="btnradio" id="btnradioForPartyD" autocomplete="off">
+                     <label class="btn btn-outline-success" for="btnradioForPartyD">Vote</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-3" id="card4" style="max-width: 540px;">
+            <div class="row g-0" style="height: 190px;">
+              <div class="col-md-4">
+                <img src="/e.png" class="img-fluid rounded-start" alt="150px-Indian_Election_Symbol_Hammer_Sickle_and_Star">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">	PARTY E (E)</h5>
+                  <p class="card-text">EFGH</p>
+                  <div>
+                     <input type="radio" class="btn-check" value="E" name="btnradio" id="btnradioForPartyE" autocomplete="off">
+                     <label class="btn btn-outline-success" for="btnradioForPartyE">Vote</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+    
+      <div class="col-6">
+        <div class="card mb-3" id="card5" style="max-width: 540px;">
+            <div class="row g-0" style="height: 190px;">
+              <div class="col-md-4">
+                <img src="/f.png" class="img-fluid rounded-start" alt="150px-Indian_Election_Symbol_Elephant">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PARTY F (F)</h5>
+                  <p class="card-text">FGHI</p>
+                  <div>
+                     <input type="radio" class="btn-check" value="F" name="btnradio" id="btnradioForPartyF" autocomplete="off">
+                     <label class="btn btn-outline-success" for="btnradioForPartyF">Vote</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-3" id="card6" style="max-width: 540px;">
+            <div class="row g-0" style="height: 162px;">
+              <div class="col-md-4">
+                <img src="/g.png" class="img-fluid rounded-start" alt="150px-Indian_Election_Symbol_Ears_of_Corn_and_Sickle">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">	PARTY G (G)</h5>
+                  <p class="card-text">GHIJ</p>
+                  <div>
+                     <input type="radio" class="btn-check" name="btnradio" value="G" id="btnradioForPartyG" autocomplete="off">
+                     <label class="btn btn-outline-success" for="btnradioForPartyG">Vote</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-3" id="card7" style="max-width: 540px;">
+            <div class="row g-0" style="height: 162px;">
+              <div class="col-md-4">
+                <img src="/h.jpg" class="img-fluid rounded-start" alt="150px-Indian_Election_Symbol_Book">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PARTY H (H)</h5>
+                  <p class="card-text">HIJK</p>
+                  <div> 
+                     <input type="radio" class="btn-check" value="H" name="btnradio" id="btnradioForPartyH" autocomplete="off">
+                     <label class="btn btn-outline-success" for="btnradioForPartyH">Vote</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div>
+  <button class="btn2"type="submit" id="proceed">Proceed</button>
+</div>
+</form>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
