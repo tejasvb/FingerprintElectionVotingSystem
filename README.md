@@ -82,7 +82,6 @@ npm start
 * Enter your fingerprint manually</br>
 
 * If same fingerprint is uploaded then page will be redirected to the voter page else error message will be dispayed<br/>
-* 
 ![image](https://user-images.githubusercontent.com/63836638/137673390-ba76be32-16ee-46e0-a0ee-590aa97eaf3a.png)<br/>
 ***
 * Click on party which you want to vote <br/>
