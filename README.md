@@ -64,7 +64,7 @@ npm start
  ***
  * Go to sign in page</br>
  
- ![image](https://user-images.githubusercontent.com/63836638/137672669-eb9f0a7a-7d11-4e27-8b16-daa6b26616c7.png)<br/>
+![image](https://user-images.githubusercontent.com/63836638/137691003-2048f326-61ac-414e-bc08-46d7b6fd42a0.png)<br/>
  ***
  * Write all the values exactly as written in the database<br/>
  
